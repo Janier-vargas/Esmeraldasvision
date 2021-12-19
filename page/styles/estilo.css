@@ -30,17 +30,19 @@ body{
 }
 .post{
     background-color: rgba(233, 174, 106,.7);
-    height: 200px;
+    width: 100%;
     margin-bottom: 1em;
     font-size: 23px;
+    border-radius: 15px;
 }
 .post1{
     background-color: rgba(233, 174, 106,.7);
-    height: 400px;
+    height: 600px;
     margin-bottom: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    border-radius: 15px;
 }
 .pie{
     width: 100%;
@@ -54,14 +56,22 @@ ul{
 }
 h3{
     color: white;
+
+    margin-right: 10px;
 }
-.alex, .karla, .tacito, .lucia, .alberto, .textos{
-    height: 100%;
+h4{
+    color: white;
+    margin-right: 10px;
+}
+.alex, .karla, .tacito, .lucia, .adalberto, .textos{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between ;
     border-radius: 5px;
     border-bottom: 15px;
+    font-size: 20px color black;
+    text-align: right;
     
 }
 
@@ -90,15 +100,10 @@ h3{
     background-repeat:no-repeat ;
     background-size: cover;
 }
-.adalberto, .lucia{
-    position: center
-}
 
 
 
 
-    
-    /*
 @media screen and (min-width: 700px) and (max-width: 1024px) {
     .contenido{
         width: 100%;
@@ -109,15 +114,35 @@ h3{
     .contenido{
         width: 100%;
     }
-       
+
+      .alex, .karla, .tacito, .lucia, .adalberto, .textos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    border-radius: 5px;
+    border-bottom: 15px;
+    font-size: 20px color black;
+    text-align: left;
+    
+} 
     
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 580px){
     .encabezado{
         height: 80px;
     }
     .contenido{
         width: 100%;
     }
-    
-}
+    .post1{
+        background-color: rgba(233, 174, 106,.7);
+        width: 100%;
+        margin-bottom: 1em;
+        display: grid;
+        grid-template-rows: 5;
+        gap: 15px;
+        border-radius: 15px;
+    }
+
+ }

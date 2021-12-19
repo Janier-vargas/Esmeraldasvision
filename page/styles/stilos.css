@@ -11,7 +11,7 @@ body{
     padding: 1em 2em;
 }
 .contenido, .pie{
-    float: left;
+   float: left;
     box-sizing: border-box;
 }
 .encabezado{
@@ -29,6 +29,7 @@ body{
     background-color: rgba(241, 240, 240, 0.5);
     border-color: rgba(0, 0, 0, 0.918);
     border-radius: 10px;
+    
 }
 h1{
     font-size: 30px;
@@ -43,6 +44,7 @@ h2{
     background-color: rgba(255, 219, 88, .7);
     width: 100%;
     margin: auto;
+    border-radius: 15px;
 }
 .pie{
     display: grid;

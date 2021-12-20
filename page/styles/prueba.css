@@ -42,10 +42,12 @@ h2{
 .info, .logros{
     font-size: 23px;
     background-color: rgba(255, 219, 88, .7);
-    width: 90%;
+    width: 60%;
     margin: auto;
     border-radius: 15px;
 }
+
+
 .pie{
     display: grid;
     grid-template-columns: repeat(2, 3fr);

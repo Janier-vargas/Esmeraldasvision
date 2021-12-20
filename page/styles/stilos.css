@@ -46,6 +46,10 @@ h2{
     margin: auto;
     border-radius: 15px;
 }
+.dsc{
+    margin: 10px;
+    padding: 3px;
+}
 .pie{
     display: grid;
     grid-template-columns: repeat(2, 3fr);

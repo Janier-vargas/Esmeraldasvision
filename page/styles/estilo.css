@@ -11,6 +11,11 @@ body{
     display: inline-flex;
     text-decoration-color: black;
 }
+.log1{
+    position: absolute;
+    left: 90em;
+    top: 25px;
+}
 .encabezado, .contenido, .pie{
     padding: 1em 2em;
 }
@@ -19,6 +24,8 @@ body{
     box-sizing: border-box;
 }
 .encabezado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: rgba(85, 236, 85,.7);
     text-align: left;
     height: 100px;
@@ -34,6 +41,7 @@ body{
     margin-bottom: 1em;
     font-size: 23px;
     border-radius: 15px;
+
 }
 .post1{
     background-color: rgba(233, 174, 106,.7);
@@ -43,6 +51,11 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     border-radius: 15px;
+    padding: 5px;
+
+}
+.desc{
+    padding: 3px;
 }
 .pie{
     width: 100%;
@@ -63,23 +76,27 @@ h4{
     color: white;
     margin-right: 10px;
 }
+
 .alex, .karla, .tacito, .lucia, .adalberto, .textos{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between ;
     border-radius: 5px;
-    border-bottom: 15px;
+    border-bottom: 20px;
     font-size: 20px color black;
     text-align: right;
     
 }
 
+
 .alex{
     background-image: url(https://www.eltelegrafo.com.ec/media/k2/items/cache/b551a10b5ddd5e46144bd1357b6fbaff_XL.jpg);
     background-repeat:no-repeat;
     background-size: cover;
+    
 }
+
 .karla{
     background-image: url(https://imagenes.expreso.ec/files/image_800_600/uploads/2020/06/09/5edfd6a8eba66.png);
     background-repeat:no-repeat ;
@@ -128,7 +145,7 @@ h4{
 } 
     
 }
-@media screen and (min-width: 580px){
+@media screen and (min-width: 580px) and (max-width:480px){
     .encabezado{
         height: 80px;
     }
@@ -140,7 +157,7 @@ h4{
         width: 100%;
         margin-bottom: 1em;
         display: grid;
-        grid-template-rows: 5;
+        grid-template-columns:repeat(1, 5fr ) ;
         gap: 15px;
         border-radius: 15px;
     }
